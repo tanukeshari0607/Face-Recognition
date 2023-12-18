@@ -96,10 +96,10 @@ let descriptors = { desc1: null, desc2: null };
 const threshold = 0.4;
 
 Promise.all([
-    faceapi.nets.tinyFaceDetector.loadFromUri('tiny_face_detector_model-weights_manifest.json'),
-    faceapi.nets.faceLandmark68Net.loadFromUri('face_landmark_68_tiny_model-weights_manifest.json'),
-    faceapi.nets.faceRecognitionNet.loadFromUri('face_recognition_model-weights_manifest.json'),
-    faceapi.nets.faceExpressionNet.loadFromUri('face_expression_model-weights_manifest.json')
+    faceapi.nets.tinyFaceDetector.loadFromUri('/tiny_face_detector_model-weights_manifest.json'),
+    faceapi.nets.faceLandmark68Net.loadFromUri('/face_landmark_68_tiny_model-weights_manifest.json'),
+    faceapi.nets.faceRecognitionNet.loadFromUri('/face_recognition_model-weights_manifest.json'),
+    faceapi.nets.faceExpressionNet.loadFromUri('/face_expression_model-weights_manifest.json')
 ]).then(startVideo);      
 
 async function startVideo() {
